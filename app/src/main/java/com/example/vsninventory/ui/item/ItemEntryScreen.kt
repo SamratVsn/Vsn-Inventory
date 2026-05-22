@@ -86,8 +86,8 @@ fun ItemEntryBody(
     modifier: Modifier = Modifier
 ) {
     Column(
-        verticalArrangement = Arrangement.spacedBy(20.dp),
-        modifier = modifier.padding(16.dp)
+        modifier = modifier.padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(20.dp)
     ) {
         ItemInputForm(
             itemDetails = itemUiState.itemDetails,
@@ -100,7 +100,7 @@ fun ItemEntryBody(
             shape = MaterialTheme.shapes.small,
             modifier = Modifier.fillMaxWidth()
         ) {
-            Text(stringResource(R.string.save_action))
+            Text(text = stringResource(R.string.save_action))
         }
     }
 }
